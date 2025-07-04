@@ -1,33 +1,23 @@
+
 #!/bin/bash
 
-# Install/update directory
-INSTALL_DIR="$HOME/CAM-HUNTER"
+# CAM-HUNTER Installer by ADIRTTA
 
-# GitHub repo URL
-REPO="https://github.com/ADIRTTA/CAM-HUNTER.git"
+clear
+echo "📹 Installing CAM-HUNTER Tool..."
+sleep 1
 
-# Check if folder exists
-if [ -d "$INSTALL_DIR" ]; then
-    echo "[*] CAM-HUNTER found, updating..."
-    cd "$INSTALL_DIR"
-    git pull origin main
-else
-    echo "[*] Installing CAM-HUNTER..."
-    git clone "$REPO" "$INSTALL_DIR"
-fi
+# Update and install dependencies
+pkg update -y && pkg install -y git python wget
+pip install requests rich pyfiglet colorama
 
-# Create a shortcut command if not exists
-BIN_DIR="$HOME/.local/bin"
-mkdir -p "$BIN_DIR"
+# Clone the CAM-HUNTER repository
+git clone https://github.com/ADIRTTA/CAM-HUNTER.git $HOME/.camhunter
 
-COMMAND_FILE="$BIN_DIR/CAM-HUNTER"
+# Create a launcher command
+echo -e '#!/bin/bash\npython3 $HOME/.camhunter/cam-hunter.py' > $PREFIX/bin/CAM-HUNTER
+chmod +x $PREFIX/bin/CAM-HUNTER
 
-if [ ! -f "$COMMAND_FILE" ]; then
-    echo "[*] Creating shortcut command 'CAM-HUNTER'..."
-    echo "#!/bin/bash
-python3 $INSTALL_DIR/cam-hunter.py" > "$COMMAND_FILE"
-    chmod +x "$COMMAND_FILE"
-fi
-
-echo "[*] Installation/Update complete."
-echo "You can now run the tool by typing: CAM-HUNTER"
+# Done!
+echo -e "\n✅ CAM-HUNTER installed successfully!"
+echo "🚀 Type 'CAM-HUNTER' to launch the tool!"
