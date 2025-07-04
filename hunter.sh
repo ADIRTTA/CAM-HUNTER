@@ -7,6 +7,10 @@ REPO_URL="https://github.com/ADIRTTA/CAM-HUNTER.git"
 COMMAND_NAME="CAM-HUNTER"
 SHORTCUT_PATH="$PREFIX/bin/$COMMAND_NAME"
 
+# ANSI color codes
+GREEN="\033[1;32m"
+RESET="\033[0m"
+
 clear
 echo "📹 Installing or Updating CAM-HUNTER Tool..."
 sleep 1
@@ -30,4 +34,4 @@ chmod +x "$SHORTCUT_PATH"
 
 # Finish
 echo -e "\n✅ CAM-HUNTER is ready to use!"
-echo "🚀 Now you can run the tool anytime by typing: $COMMAND_NAME"
+echo -e "🚀 Now you can run the tool anytime by typing: ${GREEN}$COMMAND_NAME${RESET}"
