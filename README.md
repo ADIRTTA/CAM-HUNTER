@@ -49,11 +49,7 @@ python3 cam-hunter.py
 git clone https://github.com/ADIRTTA/CAM-HUNTER.git && cd CAM-HUNTER && pip install -r requirements.txt && python3 cam-hunter.py
 ```
 
-### 🔹 Recommended (Auto setup + shortcut):
 
-```bash
-wget -O hunter.sh https://raw.githubusercontent.com/ADIRTTA/CAM-HUNTER/main/hunter.sh && bash hunter.sh
-```
 
 > This script:
 >
