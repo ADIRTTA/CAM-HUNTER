@@ -49,24 +49,6 @@ python3 cam-hunter.py
 git clone https://github.com/ADIRTTA/CAM-HUNTER.git && cd CAM-HUNTER && pip install -r requirements.txt && python3 cam-hunter.py
 ```
 
-
-
-> This script:
->
-> * Installs or updates the CAM-HUNTER tool
-> * Adds a shortcut command: `CAM-HUNTER`
->   ✅ Just type `CAM-HUNTER` from anywhere to run the tool anytime!
-
----
-
-## 🛠 Usage
-
-```bash
-CAM-HUNTER
-```
-
-> Choose your scanning method from the menu and explore publicly available cameras through Insecam data.
-
 ---
 
 ## 📁 Output
