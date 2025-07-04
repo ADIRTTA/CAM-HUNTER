@@ -30,4 +30,4 @@ chmod +x "$SHORTCUT_PATH"
 
 # Finish
 echo -e "\n✅ CAM-HUNTER is ready to use!"
-echo "🚀 Now you can run the tool anytime by typing: \033[1;32m$COMMAND_NAME\033[0m"
+echo "🚀 Now you can run the tool anytime by typing: $COMMAND_NAME"
