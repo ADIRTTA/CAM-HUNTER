@@ -39,6 +39,7 @@
 ```bash
 git clone https://github.com/ADIRTTA/CAM-HUNTER.git
 cd CAM-HUNTER
+chmod +x *
 pip install -r requirements.txt
 python3 cam-hunter.py
 ````
@@ -46,7 +47,7 @@ python3 cam-hunter.py
 ### 🔹 One-liner Install & Run:
 
 ```bash
-git clone https://github.com/ADIRTTA/CAM-HUNTER.git && cd CAM-HUNTER && pip install -r requirements.txt && python3 cam-hunter.py
+git clone https://github.com/ADIRTTA/CAM-HUNTER.git && cd CAM-HUNTER && chmod +x * && pip install -r requirements.txt && python3 cam-hunter.py
 ```
 
 ---
