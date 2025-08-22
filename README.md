@@ -68,7 +68,7 @@ git clone https://github.com/ADIRTTA/CAM-HUNTER.git && cd CAM-HUNTER && chmod +x
 Install manually if needed:
 
 ```bash
-pip install requests rich
+pip install requests rich colorama pyfiglet googlesearch-python
 ```
 
 ---
