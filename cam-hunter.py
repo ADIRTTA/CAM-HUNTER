@@ -1,2 +1,2 @@
 import camhunter
-camhunte.run()
+camhunter.run()
